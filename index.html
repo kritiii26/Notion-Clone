@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notion Clone</title>
+  <style>
+    :root {
+      --background-color: #0F172A;
+      --text-color: #FFFFFF;
+      --secondary-text-color: #94A3B8;
+      --card-background: #1E293B;
+      --primary-accent: #3B82F6;
+      --button-background: #FFFFFF;
+      --button-text: #0F172A;
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    /* Navigation */
+    .top-navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .brand-logo-container {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .main-menu-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .menu-item {
+      color: var(--secondary-text-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    
+    .menu-item:hover {
+      color: var(--text-color);
+    }
+
+    .user-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .login-link {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .signup-button {
+      background-color: var(--button-background);
+      color: var(--button-text);
+      padding: 0.5rem 1rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .subtitle-tag {
+      color: var(--primary-accent);
+      font-size: 0.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .main-headline {
+      font-size: 3rem;
+      margin: 0 0 1.5rem 0;
+    }
+
+    .description-text {
+      color: var(--secondary-text-color);
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 3rem;
+    }
+
+    /* Features Cards */
+    .features-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .feature-card {
+      background-color: var(--card-background);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      flex: 1;
+      text-align: left;
+    }
+
+    .feature-icon {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.2rem;
+      margin: 0 0 1rem 0;
+    }
+
+    .feature-description {
+      color: var(--secondary-text-color);
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+
+    /* Call to Action */
+    .call-to-action-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 2rem;
+      background: linear-gradient(to bottom, transparent, rgba(59, 130, 246, 0.1));
+      border-radius: 1rem 1rem 0 0;
+      max-width: 1200px;
+      margin: 2rem auto 0 auto;
+    }
+
+    .cta-headline {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-navigation" id="main-nav">
+    <div class="brand-logo-container" id="logo-container">
+      <span class="logo-text">Notion</span>
+    </div>
+    
+    <div class="main-menu-links" id="navigation-links">
+      <a href="#" class="menu-item">Product</a>
+      <a href="#" class="menu-item">AI</a>
+      <a href="#" class="menu-item">Solutions</a>
+      <a href="#" class="menu-item">Resources</a>
+      <a href="#" class="menu-item">Request a demo</a>
+    </div>
+
+    <div class="user-actions" id="auth-actions">
+      <a href="#" class="login-link">Log in</a>
+      <a href="notion.html" class="signup-button">Get Notion free</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section" id="hero-banner">
+      <div class="subtitle-tag" id="hero-subtitle">WHY NOTION</div>
+      <h1 class="main-headline" id="hero-headline">Work smarter, not harder</h1>
+      <p class="description-text" id="hero-description">
+        Everything your team needs to move fast — docs, projects, wikis, and now AI agents — in one connected workspace.
+      </p>
+    </section>
+
+    <section class="features-container" id="features-list">
+      <div class="feature-card" id="feature-ai-agents">
+        <div class="feature-icon">🤖</div>
+        <h3 class="feature-title">AI Agents that work for you</h3>
+        <p class="feature-description">
+          Notion agents handle repetitive work autonomously — routing tasks, writing status updates, answering team questions — so you can focus on what matters.
+        </p>
+      </div>
+
+      <div class="feature-card" id="feature-knowledge-hub">
+        <div class="feature-icon">📚</div>
+        <h3 class="feature-title">Your company's knowledge hub</h3>
+        <p class="feature-description">
+          Capture everything in one place. From meeting notes to runbooks, Notion becomes the source of truth your whole team can search and trust.
+        </p>
+      </div>
+
+      <div class="feature-card" id="feature-projects">
+        <div class="feature-icon">📦</div>
+        <h3 class="feature-title">Projects without the overhead</h3>
+        <p class="feature-description">
+          Plan sprints, track tasks, and ship faster. Kanban, timeline, table — choose the view that fits your workflow, no extra tools needed.
+        </p>
+      </div>
+    </section>
+
+    <section class="call-to-action-section" id="bottom-cta">
+      <h2 class="cta-headline">Start building with Notion today</h2>
+    </section>
+  </main>
+
+</body>
+</html>

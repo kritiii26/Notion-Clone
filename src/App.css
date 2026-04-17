@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dark {
+  --bg-side: #202020;
+  --bg-main: #191919;
+  --txt-pri: #FFFFFF;
+  --txt-sec: #9B9B9B;
+  --border: #2D2D2D;
+  --hover: #2D2D2D;
+  --bg-card: #202020;
+  --bg-info: #252525;
+}
+
+.light {
+  --bg-side: #F7F7F5;
+  --bg-main: #FFFFFF;
+  --txt-pri: #37352F;
+  --txt-sec: #9B9A97;
+  --border: #E9E9E7;
+  --hover: #EAEAE9;
+  --bg-card: #FFFFFF;
+  --bg-info: #F7F7F5;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-main);
+  color: var(--txt-pri);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: var(--bg-side);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  transition: background-color 0.3s;
+}
+
+.profile {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.profile:hover {
+  background-color: var(--hover);
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navlink {
+  padding: 6px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--txt-sec);
+}
+
+.navlink:hover {
+  background-color: var(--hover);
+}
+
+.navlink.active {
+  background-color: var(--hover);
+  color: var(--txt-pri);
+  font-weight: 500;
+}
+
+.navcat {
+  padding: 15px 15px 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--txt-sec);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.topnav {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: var(--txt-sec);
+  font-size: 14px;
+}
+
+.navleft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navright {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.themebtn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--txt-pri);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.themebtn:hover {
+  background-color: var(--hover);
+}
+
+.banner {
+  height: 200px;
+  background: linear-gradient(135deg, #a1c4fd 0%, #fbc2eb 100%);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.emoji {
+  position: absolute;
+  bottom: -35px;
+  left: 80px;
+  font-size: 70px;
+}
+
+.page {
+  padding: 50px 80px;
+  max-width: 900px;
+}
+
+.pagetitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.infobox {
+  background-color: var(--bg-info);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 15px;
+  line-height: 1.6;
+}
+
+.infoicon {
+  font-size: 24px;
+}
+
+.infotext strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dbhead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.dbicon {
+  color: var(--txt-sec);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.card:hover {
+  background-color: var(--hover);
+}
+
+.cardimg {
+  height: 120px;
+  background-color: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.img-w { background: #fdfbfb; }
+.img-p { background: #fad0c4; }
+.img-o { background: #ffecd2; }
+
+.cardbody {
+  padding: 12px;
+}
+
+.cardtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.cardbadge {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: rgba(155, 155, 155, 0.2);
+  color: var(--txt-sec);
+  border-radius: 3px;
+  font-size: 12px;
+}
