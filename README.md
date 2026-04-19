@@ -4,6 +4,7 @@
 
 This project is a **React-based clone of a productivity/task management application**, inspired by tools like Notion, Google Tasks, and Todoist.
 
+
 The goal was to recreate the core idea of such platforms — allowing users to manage tasks, organize work, and track progress — using only frontend technologies like React, without building a full backend.
 
 ---
