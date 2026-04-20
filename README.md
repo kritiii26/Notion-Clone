@@ -41,3 +41,4 @@ To run this project locally on your machine:
 4. **View the application:**
    Open your browser and navigate to the localhost URL provided by Vite (typically `http://localhost:5173/notion.html`) to see the interactive dashboard. You can also view the landing page at `http://localhost:5173/`.
  
+ 
